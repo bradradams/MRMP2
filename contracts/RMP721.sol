@@ -19,14 +19,14 @@ contract RMP721 is ERC721Full, ERC721Mintable {
     struct metaData {
         address contAddress; //Official contract address for this token
         address trustee; //Ethereum address where the token will be stored
-        string title; //Title of recording
-        string artist; //Title of performer or band
-        string album; //Album, if none use 'single'
+        bytes32 title; //Title of recording
+        bytes32 artist; //Title of performer or band
+        bytes32 album; //Album, if none use 'single'
         uint rMonth; //Release month
         uint rDay; //Release day
         uint rYear; //Release year
         uint8 genre; //enum Genre : See notes by enum definition above
-        string image; //uri for cover art image stored on IPFS
+        bytes32 image; //uri for cover art image stored on IPFS
     }
 
     mapping (uint256 => metaData) public _mData; //Mapping from Token ID to metadata
@@ -42,14 +42,14 @@ contract RMP721 is ERC721Full, ERC721Mintable {
         uint256 _rmpId,
         address _contAddress,
         address _trustee,
-        string _title,
-        string _artist,
-        string _album,
+        bytes32 _title,
+        bytes32 _artist,
+        bytes32 _album,
         uint _rMonth,
         uint _rDay,
         uint _rYear,
         uint8 _genre,
-        string _image
+        bytes32 _image
     )
     public
     {
@@ -67,14 +67,14 @@ contract RMP721 is ERC721Full, ERC721Mintable {
     function getMdata (uint256 _rmpId) public view returns (
         address _contAddress,
         address _trustee,
-        string _title,
-        string _artist,
-        string _album,
+        bytes32 _title,
+        bytes32 _artist,
+        bytes32 _album,
         uint _rMonth,
         uint _rDay,
         uint _rYear,
         uint8 _genre,
-        string _image
+        bytes32 _image
     )
 
     {

@@ -16,8 +16,8 @@ contract RMPcontract {
     address trustee;
 
     struct stakeholder {
-        string name; //Stakeholder's name
-        string title; //Stakeholder's title i.e. songwriter, composer, musician, organization, other
+        bytes32 name; //Stakeholder's name
+        bytes32 title; //Stakeholder's title i.e. songwriter, composer, musician, organization, other
         uint percentage; //Integer 1 to 100 indicating percentage of royalties
         address addr; //Stakeholder's Ethereum address
     }
@@ -42,8 +42,8 @@ contract RMPcontract {
     }
 
     function addStakeholderOfficial(
-        string _name,
-        string _title,
+        bytes32 _name,
+        bytes32 _title,
         uint _percentage,
         address _addr
     )
@@ -55,8 +55,8 @@ contract RMPcontract {
     }
 
     function getStakeholder(uint index) public view returns(
-        string _name,
-        string _title,
+        bytes32 _name,
+        bytes32 _title,
         uint _percentage,
         address _addr
     )
