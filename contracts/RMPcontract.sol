@@ -16,8 +16,8 @@ contract RMPcontract {
     address rmpManager;
     address trustee;
     address[] stakeholders;
-    mapping(address => string) stakeholderName;
-    mapping(address => string) stakeholderTitle;
+    mapping(address => bytes32) stakeholderName;
+    mapping(address => bytes32) stakeholderTitle;
     mapping(address => uint) stakeholderPercentage; // uint from 1 to 100 indicating percentage
 
     event RoyaltyPayment(uint256 tokenId, uint amount);
@@ -32,8 +32,8 @@ contract RMPcontract {
 
 
     function addStakeholderOfficial(
-        string _name,
-        string _title,
+        bytes32 _name,
+        bytes32 _title,
         uint _percentage,
         address _addr
     )
@@ -48,8 +48,8 @@ contract RMPcontract {
     }
 
     function getStakeholder(address _address) public view returns(
-        string _name,
-        string _title,
+        bytes32 _name,
+        bytes32 _title,
         uint _percentage
     )
     {
