@@ -62,15 +62,12 @@ contract RMPcontract {
 
     function() external payable {
         uint amountReceived = msg.value;
-
         uint payment;
-
         for (uint i = 0; i < stakeholders.length; i++) {
             payment = SafeMath.mul(stakeholderPercentage[stakeholders[i]], amountReceived);
             payment = SafeMath.div(payment, 100);
             stakeholders[i].transfer(payment);
         }
-
         emit RoyaltyPayment(rmpId, amountReceived);
     }
 }
