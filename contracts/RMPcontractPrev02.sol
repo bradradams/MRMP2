@@ -1,6 +1,5 @@
 pragma solidity ^0.4.24;
 
-import "./SafeMath.sol";
 
 /**
  *
@@ -16,9 +15,11 @@ contract RMPcontract {
     address rmpManager;
     address trustee;
     address[] stakeholders;
-    mapping(address => string) stakeholderName;
-    mapping(address => string) stakeholderTitle;
-    mapping(address => uint) stakeholderPercentage; // uint from 1 to 100 indicating percentage
+    mapping(address => bytes32) stakeholderName;
+    mapping(address => bytes32) stakeholderTitle;
+    mapping(address => uint) stakeholderPercentage;
+
+    uint stHolderCount;
 
     event RoyaltyPayment(uint256 tokenId, uint amount);
 
@@ -32,8 +33,8 @@ contract RMPcontract {
 
 
     function addStakeholderOfficial(
-        string _name,
-        string _title,
+        bytes32 _name,
+        bytes32 _title,
         uint _percentage,
         address _addr
     )
@@ -45,11 +46,12 @@ contract RMPcontract {
         stakeholderTitle[_addr] = _title;
         stakeholderPercentage[_addr] = _percentage;
 
+        stHolderCount++;
     }
 
     function getStakeholder(address _address) public view returns(
-        string _name,
-        string _title,
+        bytes32 _name,
+        bytes32 _title,
         uint _percentage
     )
     {
@@ -57,19 +59,16 @@ contract RMPcontract {
     }
 
     function getNumStakeholders() public view returns (uint) {
-        return stakeholders.length;
+        return stHolderCount;
     }
 
-    function() external payable {
+    function() public payable {
         uint amountReceived = msg.value;
 
-        uint payment;
 
-        for (uint i = 0; i < stakeholders.length; i++) {
-            payment = SafeMath.mul(stakeholderPercentage[stakeholders[i]], amountReceived);
-            payment = SafeMath.div(payment, 100);
-            stakeholders[i].transfer(payment);
-        }
+        //Unfinished
+        //Need to distribute funds to stakeholders
+        //Can this be done without floating points?
 
         emit RoyaltyPayment(rmpId, amountReceived);
     }

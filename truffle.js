@@ -12,7 +12,7 @@ module.exports = {
             host: "127.0.0.1",
             port: 7545,
             network_id: "*",
-            gas: 4000000
+            gas: 6500000
         },
 
 
@@ -22,7 +22,7 @@ module.exports = {
                 return new HDWalletProvider(MNEMONIC, "https://ropsten.infura.io/v3/269b9f38fe5a45fc9d94739547b20b52")
             },
             network_id: 3,
-            gas: 4000000
+            gas: 8000000
         }
     }
 

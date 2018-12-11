@@ -1,5 +1,4 @@
 
-
 var RMP721 = artifacts.require("RMP721");
 var MRMP = artifacts.require("MRMP");
 

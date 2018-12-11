@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ed1daa7-f0dc-44cd-b5cc-08b81aca44c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/SafeMath.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/TestRMPcontract.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Address.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Address.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC165.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/ERC165.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/ERC721.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721Enumerable.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/ERC721Enumerable.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721Full.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/ERC721Full.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721Metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/ERC721Metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/ERC721Mintable.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/ERC721Mintable.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC165.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC165.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC721.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721Enumerable.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC721Enumerable.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721Metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC721Metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/IERC721Receiver.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/IERC721Receiver.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/MRMP.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/MRMP.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Migrations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/MinterRole.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/MinterRole.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/RMP721.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/RMP721.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/RMPcontract.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/RMPcontract.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/Roles.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/Roles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contracts/SimpleStorage.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/contracts/SimpleStorage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/MRMP.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/MRMP.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/RMPcontract.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/RMPcontract.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/2_deploy_contracts.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/2_deploy_contracts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestMRMP01.sol" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestMRMP01.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSimpleStorage.sol" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSimpleStorage.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/truffle.js" beforeDir="false" afterPath="$PROJECT_DIR$/truffle.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,39 +42,43 @@
     <session id="121159631">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="7" />
+          <entry key="js" value="109" />
           <entry key="md" value="10" />
-          <entry key="sol" value="80" />
+          <entry key="sol" value="1091" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="109" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Solidity file" value="80" />
+          <entry key="Solidity file" value="1091" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="js" value="2" />
+          <entry key="js" value="16" />
           <entry key="md" value="1" />
-          <entry key="sol" value="10" />
+          <entry key="sol" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Solidity file" value="10" />
+          <entry key="Solidity file" value="34" />
         </counts>
       </usages-collector>
     </session>
@@ -57,17 +88,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contracts/MRMP.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="112" column="68" lean-forward="true" selection-start-line="112" selection-start-column="68" selection-end-line="112" selection-end-column="68" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/RMP721.sol">
+        <entry file="file://$PROJECT_DIR$/contracts/MRMPprevious02.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="339">
+              <caret line="214" lean-forward="true" selection-end-line="216" selection-end-column="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/MRMPben.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3195">
+              <caret line="213" selection-start-line="213" selection-end-line="213" />
             </state>
           </provider>
         </entry>
@@ -75,17 +115,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/RMPcontract.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+            <state relative-caret-position="1170">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/TestMRMP01.sol">
+        <entry file="file://$PROJECT_DIR$/contracts/SafeMath.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="30">
+              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -114,28 +154,39 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/contracts/TestMRMP01.sol" />
-        <option value="$PROJECT_DIR$/truffle.js" />
-        <option value="$PROJECT_DIR$/migrations/2_deploy_contracts.js" />
-        <option value="$PROJECT_DIR$/test/TestMRMP01.sol" />
         <option value="$PROJECT_DIR$/README.md.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/contracts/RMPcontract.sol" />
         <option value="$PROJECT_DIR$/contracts/RMP721.sol" />
+        <option value="$PROJECT_DIR$/migrations/3_deploy_contracts.js" />
+        <option value="$PROJECT_DIR$/contracts/RMPcontractPrev01.sol" />
+        <option value="$PROJECT_DIR$/truffle.js" />
+        <option value="$PROJECT_DIR$/test/TestMRMP01.sol" />
+        <option value="$PROJECT_DIR$/migrations/Back2_deploy_contracts.js" />
+        <option value="$PROJECT_DIR$/contracts/MRMPprevious01.sol" />
+        <option value="$PROJECT_DIR$/migrations/Back22_deploy_contracts.js" />
+        <option value="$PROJECT_DIR$/test/TestRMPcontract.sol" />
+        <option value="$PROJECT_DIR$/migrations/2_deploy_contracts.js" />
+        <option value="$PROJECT_DIR$/test/TestSimpleStorage.sol" />
+        <option value="$PROJECT_DIR$/contracts/TestRMPcontract2.sol" />
+        <option value="$PROJECT_DIR$/contracts/MRMPprevious02.sol" />
+        <option value="$PROJECT_DIR$/contracts/RMPcontractPrev02.sol" />
+        <option value="$PROJECT_DIR$/contracts/SafeMath.sol" />
+        <option value="$PROJECT_DIR$/contracts/RMPcontract.sol" />
+        <option value="$PROJECT_DIR$/contracts/MRMPben.sol" />
         <option value="$PROJECT_DIR$/contracts/MRMP.sol" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,17 +223,33 @@
           <expand>
             <path>
               <item name="mrmp2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="mrmp2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="mrmp2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mrmp2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="contracts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="mrmp2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mrmp2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="migrations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="mrmp2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mrmp2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544304452105" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544553561720" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -211,10 +278,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -223,13 +290,13 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968536" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3378933" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -247,27 +314,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/contracts/TestMRMP01.sol" />
-    <entry file="file://$PROJECT_DIR$/truffle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/2_deploy_contracts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md.html" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -275,31 +322,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestMRMP01.sol">
+    <entry file="file://$PROJECT_DIR$/truffle-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/RMPcontract.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/RMPcontractPrev01.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        <state relative-caret-position="1320">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/SimpleStorage.sol">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/MRMPprevious01.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Back22_deploy_contracts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/Back2_deploy_contracts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/3_deploy_contracts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/truffle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestSimpleStorage.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/simplestorage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/TestRMPcontract2.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestRMPcontract.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestMRMP01.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/2_deploy_contracts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/RMP721.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/RMPcontractPrev02.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../temp/RMPcontract.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../temp/MRMP.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../temp/SafeMath.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/SafeMath.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/RMPcontract.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/MRMPben.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3195">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/MRMPprevious02.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="214" lean-forward="true" selection-end-line="216" selection-end-column="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/MRMP.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="112" column="68" lean-forward="true" selection-start-line="112" selection-start-column="68" selection-end-line="112" selection-end-column="68" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

@@ -18,37 +18,28 @@ contract MRMP {
     //address rmp721Address;
     RMP721 minter;
 
-    //    mapping (uint8 => mapping (uint256 => bytes32)) internal genreToArtists;
+    //    mapping (uint8 => string[]) internal genreToArtists;
     //
-    //    mapping (bytes32 => mapping (uint256 => bytes32)) internal artistToAlbums;
+    //    mapping (string => string[]) internal artistToAlbums;
     //
-    //    mapping (bytes32 => mapping (uint256 => bytes32)) internal albumToTitles;
+    //    mapping (string => string[]) internal albumToSongs;
 
     bytes32[] artist;
 
-    uint256[]rmpIdList;
-
-    mapping(uint256 => bool) internal rmpId_exists;
-
     mapping(bytes32 => bool) internal artist_exists;
 
-    mapping(bytes32 => bool) internal album_exists;
+    mapping (uint8 => mapping (uint256 => bytes32)) internal genreToArtists;
 
-    mapping(bytes32 => bool) internal title_exists;
+    mapping (bytes32 => mapping (uint256 => bytes32)) internal artistToAlbums;
 
-
-    mapping (uint8 => bytes32[]) internal genreToArtists;
-
-    mapping (bytes32 => bytes32[]) internal artistToAlbums;
-
-    mapping (bytes32 => bytes32[]) internal albumToTitles;
+    mapping (bytes32 => mapping (uint256 => bytes32)) internal albumToSongs;
 
 
-    mapping (bytes32 => uint256) internal titleToRMPid;
+    mapping (bytes32 => uint256) internal songToTokenId;
 
-    mapping (bytes32 => bytes32) internal titleToAlbum;
+    mapping (bytes32 => bytes32) internal songToAlbum;
 
-    mapping (bytes32 => bytes32) internal titleToImage; // IPFS image link
+    mapping (bytes32 => bytes32) internal songToImage; // IPFS image link
 
     mapping (bytes32 => bytes32) internal albumToArtist;
 
@@ -64,8 +55,6 @@ contract MRMP {
 
     event NewId(uint256 rmpId);
     event NewContract(address rmpContract);
-    event songAdded(bytes32 _title);
-    event contractCreated(address _contAddress);
 
 
     constructor(address _rmp721Address) public {
@@ -85,12 +74,16 @@ contract MRMP {
 
 
     function generateId() public {
-
         //require(msg.sender == rmpManager);
 
+        //        //function calls _exists from ERC721
+        //        uint256 rmpId = 0;
+        //        while (rmpId == 0 || _exists(rmpId)) {
+        //            rmpId = uint256(now);
+        //            //rmpId = uint256(keccak256(bytes((_rYear * _rMonth * _rDay)))); won't compile
+        //        }
+
         uint256 rmpId = uint256(now);
-        rmpIdList.push(rmpId);
-        rmpId_exists[rmpId] = true;
         emit NewId(rmpId);
     }
 
@@ -116,29 +109,38 @@ contract MRMP {
         //i.e. require(_genre > 0 && _genre <= 12)
 
         //check to see if artist exists, if not then add it
+        //        bool exists = false;
+        //        for (uint256 i = 0; i < artist.length; i++) {
+        //           if (keccak256(bytes(artist[i])) == keccak256(bytes(_artist))) exists = true;
+        //            // is there a better way? Needs to be tested
+        //        }
+        //        if (!exists)
+        //        artist.push(_artist);
 
         if(!artist_exists[_artist]) {
             artist.push(_artist);
             artist_exists[_artist] = true;
-            genreToArtists[_genre].push(_artist);
         }
 
-        if(!album_exists[_album]) {
-            artistToAlbums[_artist].push(_album);
-            albumToArtist[_album] = _artist;
-        }
 
-        if(!title_exists[_title]) {
-            albumToTitles[_album].push(_title);
-            titleToAlbum[_title] = _album;
-            titleToImage[_title] = _image; // IPFS image link
-            titleToRMPid[_title] = _rmpId;
-        }
+        //add artist to genreToArtists;
+
+        //add album to artistToAlbums;
+
+        //add song to albumToSongs;
+
+
+        songToImage[_title] = _image; // IPFS image link
+
+        songToTokenId[_title] = _rmpId;
+
+        songToAlbum[_title] = _album;
+
+        albumToArtist[_album] = _artist;
 
         //create contract and mint token
         createContract(_rmpId, _trustee, _title, _artist, _album, _rMonth, _rDay, _rYear, _genre, _image);
 
-        emit songAdded(_title);
         return 1;
     }
 
@@ -172,9 +174,8 @@ contract MRMP {
         numContracts++;
 
         //mint token
-        //minter.mintRMP721(_rmpId, _contAddress, _trustee, _title, _artist, _album, _rMonth, _rDay, _rYear, _genre, _image);
+        minter.mintRMP721(_rmpId, _contAddress, _trustee, _title, _artist, _album, _rMonth, _rDay, _rYear, _genre, _image);
 
-        emit contractCreated(_contAddress);
         return 1;
     }
 
@@ -194,24 +195,19 @@ contract MRMP {
         RMPcont.addStakeholderOfficial(_name, _title, _percentage, _addr);
     }
 
-
-    function getArtists(uint8 genre) public view returns (bytes32[]) {
-        return genreToArtists[genre];
+    function getArtists(uint8 genre, uint256 index) public view returns (bytes32) {
+        return genreToArtists[genre][index];
     }
 
     function getContractAddress(uint256 _rmpId) public view returns (address) {
         return rmpIdToContract[_rmpId];
     }
 
-    //    function getArtists(uint8 genre, uint256 index) public view returns (bytes32) {
-    //        return genreToArtists[genre][index];
+    //In order to return string[], had to use 'pragma experimental ABIEncoderV2;', warning: don't use on live deployments
+    //    function getArtists(uint8 genre) public view returns (string[]) {
+    //        return genreToArtists[genre];
     //    }
 
     //Need more getters like one above, should test above function first
 
 }
-
-
-
-
-//In order to return string[], had to use 'pragma experimental ABIEncoderV2;', warning: don't use on live deployments

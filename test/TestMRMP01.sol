@@ -5,21 +5,25 @@ import "truffle/DeployedAddresses.sol";
 import "../contracts/MRMP.sol";
 
 
-/*
+
 contract TestMRMP01 {
-    MRMP mrmp = MRMP(DeployedAddresses.MRMP());
 
-    function testAddSong() public {
+//        MRMP mrmp = MRMP(DeployedAddresses.MRMP());
+//
+//        _report(mrmp, "  test message 1");
+//
 
-        mrmp.addSong();
-
-
-
-
-
-
+//    function testAddSong() public {
+//
+//        mrmp.addSong();
 
 
+}
+
+
+
+
+/*
 
 
         uint returnedId = adoption.adopt(8);
@@ -57,3 +61,7 @@ contract TestMRMP01 {
 
 
 
+//if(!artist_exists[_artist]) {
+//artist.push(_artist);
+//artist_exists[_artist] = true;
+//}

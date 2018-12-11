@@ -1,0 +1,451 @@
+{
+  "contractName": "TestRMPContract2",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "contAdd",
+          "type": "address"
+        }
+      ],
+      "name": "contCreated",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60806040526005600055610011610080565b604051809103906000f08015801561002d573d6000803e3d6000fd5b50600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555034801561007a57600080fd5b50610090565b604051610529806100d383390190565b60358061009e6000396000f3006080604052600080fd00a165627a7a7230582088e33f495cda3227abdfc0613097b1d1fa660d995124399c485c0780c66967940029608060405234801561001057600080fd5b50610509806100206000396000f300608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635cbff4e5146100ab57806362afde251461011857806381e1091a1461018d57806384b4499c146101b8575b60003490507f284e3e671efeae309596e07a9a625e828b817ad516b3fb4ff24f7aa7b46cc1ad60005482604051808381526020018281526020019250505060405180910390a150005b3480156100b757600080fd5b5061011660048036038101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610221565b005b34801561012457600080fd5b50610159600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102af565b6040518084600019166000191681526020018360001916600019168152602001828152602001935050505060405180910390f35b34801561019957600080fd5b506101a2610381565b6040518082815260200191505060405180910390f35b3480156101c457600080fd5b5061021f6004803603810190808035600019169060200190929190803560001916906020019092919080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061038b565b005b8260008190555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505050565b6000806000600460008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054600560008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054600660008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549250925092509193909250565b6000600754905090565b60038190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505083600460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020816000191690555082600560008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020816000191690555081600660008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550600760008154809291906001019190505550505050505600a165627a7a72305820907b9427e4592aa727cfca37ebbbb5e554a64f73c6e80372fe860798d7f09e7c0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582088e33f495cda3227abdfc0613097b1d1fa660d995124399c485c0780c66967940029",
+  "sourceMap": "128:161:5:-;;;210:1;201:10;;241:17;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;241:17:5;218:40;;;;;;;;;;;;;;;;;;;;128:161;8:9:-1;5:2;;;30:1;27;20:12;5:2;128:161:5;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "128:161:5:-;;;;;",
+  "source": "pragma solidity ^0.4.24;\n\n//import \"truffle/Assert.sol\";\n//import \"truffle/DeployedAddresses.sol\";\nimport \"./RMPcontract.sol\";\n\ncontract TestRMPContract2 {\n    event contCreated(address contAdd);\n\n    uint x = 5;\n\n    address _contAddress = new RMPcontract();\n\n    //emit contCreated(x);\n}",
+  "sourcePath": "/Users/brad/Documents/CS480/project/mrmp2/contracts/TestRMPcontract2.sol",
+  "ast": {
+    "absolutePath": "/Users/brad/Documents/CS480/project/mrmp2/contracts/TestRMPcontract2.sol",
+    "exportedSymbols": {
+      "TestRMPContract2": [
+        938
+      ]
+    },
+    "id": 939,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 924,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/Users/brad/Documents/CS480/project/mrmp2/contracts/RMPcontract.sol",
+        "file": "./RMPcontract.sol",
+        "id": 925,
+        "nodeType": "ImportDirective",
+        "scope": 939,
+        "sourceUnit": 737,
+        "src": "99:27:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [
+          736
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 938,
+        "linearizedBaseContracts": [
+          938
+        ],
+        "name": "TestRMPContract2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 929,
+            "name": "contCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 928,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 927,
+                  "indexed": false,
+                  "name": "contAdd",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 929,
+                  "src": "178:15:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 926,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "178:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "177:17:5"
+            },
+            "src": "160:35:5"
+          },
+          {
+            "constant": false,
+            "id": 932,
+            "name": "x",
+            "nodeType": "VariableDeclaration",
+            "scope": 938,
+            "src": "201:10:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 930,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "201:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "35",
+              "id": 931,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "210:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_5_by_1",
+                "typeString": "int_const 5"
+              },
+              "value": "5"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 937,
+            "name": "_contAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 938,
+            "src": "218:40:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 933,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "218:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [],
+              "expression": {
+                "argumentTypes": [],
+                "id": 935,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "nodeType": "NewExpression",
+                "src": "241:15:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RMPcontract_$736_$",
+                  "typeString": "function () returns (contract RMPcontract)"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 934,
+                  "name": "RMPcontract",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 736,
+                  "src": "245:11:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_RMPcontract_$736",
+                    "typeString": "contract RMPcontract"
+                  }
+                }
+              },
+              "id": 936,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": false,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "241:17:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RMPcontract_$736",
+                "typeString": "contract RMPcontract"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 939,
+        "src": "128:161:5"
+      }
+    ],
+    "src": "0:289:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/brad/Documents/CS480/project/mrmp2/contracts/TestRMPcontract2.sol",
+    "exportedSymbols": {
+      "TestRMPContract2": [
+        938
+      ]
+    },
+    "id": 939,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 924,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/Users/brad/Documents/CS480/project/mrmp2/contracts/RMPcontract.sol",
+        "file": "./RMPcontract.sol",
+        "id": 925,
+        "nodeType": "ImportDirective",
+        "scope": 939,
+        "sourceUnit": 737,
+        "src": "99:27:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [
+          736
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 938,
+        "linearizedBaseContracts": [
+          938
+        ],
+        "name": "TestRMPContract2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 929,
+            "name": "contCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 928,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 927,
+                  "indexed": false,
+                  "name": "contAdd",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 929,
+                  "src": "178:15:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 926,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "178:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "177:17:5"
+            },
+            "src": "160:35:5"
+          },
+          {
+            "constant": false,
+            "id": 932,
+            "name": "x",
+            "nodeType": "VariableDeclaration",
+            "scope": 938,
+            "src": "201:10:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 930,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "201:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "35",
+              "id": 931,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "210:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_5_by_1",
+                "typeString": "int_const 5"
+              },
+              "value": "5"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 937,
+            "name": "_contAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 938,
+            "src": "218:40:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 933,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "218:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [],
+              "expression": {
+                "argumentTypes": [],
+                "id": 935,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": false,
+                "lValueRequested": false,
+                "nodeType": "NewExpression",
+                "src": "241:15:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_RMPcontract_$736_$",
+                  "typeString": "function () returns (contract RMPcontract)"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 934,
+                  "name": "RMPcontract",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 736,
+                  "src": "245:11:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_RMPcontract_$736",
+                    "typeString": "contract RMPcontract"
+                  }
+                }
+              },
+              "id": 936,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": false,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "241:17:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RMPcontract_$736",
+                "typeString": "contract RMPcontract"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 939,
+        "src": "128:161:5"
+      }
+    ],
+    "src": "0:289:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x5b3d53b83979fcaf8d876115b7a6a66d7bc503ec",
+      "transactionHash": "0xd0eeac501f1132261b93540023c91838533331aa4d2008975372ee60b4abc954"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-12-10T23:48:09.338Z"
+}
